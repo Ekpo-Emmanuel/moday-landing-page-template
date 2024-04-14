@@ -31,8 +31,7 @@ export default function Sponsor() {
                 <Image 
                     src={sponsor.image}
                     alt='sponsors'
-                    width={70}
-                    height={70}
+                    className='object-contain sm:w-30 sm:h-30 w-20  h-20'
                 />
             </div>
         ))}
