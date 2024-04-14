@@ -1,0 +1,98 @@
+.tab-container {
+    margin-top: 70px;
+    @include padding(70px, 50px);
+    max-width: $max-width;
+    @media (max-width: map-get($breakpoints, 'sm')) {
+        @include padding(30px, 20px);
+        margin-top:10px;
+    }
+
+    .title {
+        font-size: $header-size;
+        font-family: $fourth-font;
+        @media screen and (max-width: map-get($breakpoints, 'md')) {
+            font-size: 1.6em;
+            display: block;
+        }
+        @media screen and (max-width: map-get($breakpoints, 'sm')) {
+            font-size: 1.4em;
+        }
+        span {
+            font-size: 15px;
+            background-color: $yellow-color;
+            letter-spacing: -1px;
+            word-spacing: 1px;
+            font-weight: 600;
+            border-radius: 50px;
+            padding: 2px 15px;
+            @media screen and (max-width: map-get($breakpoints, 'md')) {
+                font-size: 14px;
+                display: block;
+                width: fit-content;
+                margin-top: 5px;
+                padding: 1px 10px;
+            }
+            @media screen and (max-width: map-get($breakpoints, 'sm')) {
+                // font-size: 1.4em;
+            }
+        }
+    }
+    .tab-buttons {
+        margin-top: 40px;
+        display: flex;
+        gap: 50px;
+        @media screen and (max-width: map-get($breakpoints, 'sm')) {
+            gap: unset;
+            justify-content: space-between;
+        }
+    
+        border-bottom: 1px solid #ccc;
+        p {
+            padding: 10px 0px;
+            cursor: pointer;
+            background-color: inherit;
+            font-weight: 600;
+            letter-spacing: -1px;
+            &.active {
+                border-bottom: 2px solid red;
+            }
+        }
+    }
+    .tab-content {
+        margin-top: 30px;
+        .container-icon {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+            cursor: default;
+            @media (max-width: map-get($breakpoints, 'sm')) {
+                gap: 10px;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                outline: 1px solid $white-color;
+                padding: 10px 20px;
+                border-radius: 5px;
+                @media (max-width: map-get($breakpoints, 'sm')) {
+                    gap: 10px;
+                    padding: 10px 10px;
+                }
+                span {
+                    // font-family: $third-font;
+                    letter-spacing: -1px;
+                    text-transform: capitalize;
+                    display: inline;
+                    @media (max-width: map-get($breakpoints, 'sm')) {
+                        font-size: 15px;
+                    }
+                }
+                img {
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
