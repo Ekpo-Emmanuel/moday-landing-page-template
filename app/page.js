@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Efficiency from "./(routes)/Home/_components/Efficiency";
 import Features from "./(routes)/Home/_components/Features";
 import Navbar from "./(routes)/Home/_components/Navbar";
 import Part2 from "./(routes)/Home/_components/Part2";
@@ -19,6 +20,7 @@ export default function Home() {
       <Part4 />
       <Part5 />
       <Products />
+      <Efficiency />
     </>
   );
 }
