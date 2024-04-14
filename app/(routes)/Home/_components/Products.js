@@ -29,7 +29,7 @@ export default function Products() {
         },
     ]
   return (
-    <section className="py-10  px-5 sm:px-0 sm:py-20 mx-auto max-w-7xl">
+    <section className="py-10  px-5 sm:px-0 sm:py-20 mx-auto max-w-7xl" >
         <main className='flex flex-col sm:items-center gap-3 sm:gap-5'>
             <img 
                 src='https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/monday_products_small.svg'
