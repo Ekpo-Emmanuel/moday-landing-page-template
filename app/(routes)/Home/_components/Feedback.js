@@ -90,13 +90,13 @@ import Image from 'next/image';
           <CarouselContent>
           {details.map((item, index) => (
             <CarouselItem key={index}>
-                <div className="flex items-center justify-center p-6 bg-[#181B34] rounded-3xl relative cursor-default">
+                <div className="flex items-center justify-center p-6 bg-[#6161FF] rounded-3xl relative cursor-default">
                 <div className="">
                     {/* <img src={item.image} alt={item.name} className="w-full" /> */}
                     <div className="mt-4">
                     <p className="text-xl font-bold text-white">{item.name}</p>
                     <p className="text-[10px] text-white">{item.title}</p>
-                    <p className="text-sm mt-4 text-white">"{item.description}"</p>
+                    <p className="text-md mt-4 text-white">"{item.description}"</p>
                     {/* {item.company && <p className="absolute top-10 left-10 overflow-hidden rounded-full w-20 h-20">
                         <Image src={image5} alt={image1_1} />
                     </p>} */}
@@ -109,8 +109,8 @@ import Image from 'next/image';
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
-        <div className="py-2 text-center text-sm text-muted-foreground">
-          {/* Slide {current} of {count} */}
+        <div className="py-2 text-center text-[10px] text-muted-foreground">
+          {current} of {count}
         </div>
       </div>
     )
@@ -120,7 +120,7 @@ import Image from 'next/image';
 
 export default function Feedback() {
   return (
-    <div className='py-10 sm:px-0 sm:py-20 mx-auto max-w-7xl'>
+    <div className='sm:px-0 sm:py-20 mx-auto max-w-7xl'>
         <div className='grid md:grid-cols-8 gap-10 p-5 sm:p-10 items-center '>
             <div className='md:col-span-3'>
                 <p className='text-2xl leading-tighter sm:leading-none sm:text-5xl font-extrabold'>See how our customers drive impact</p>

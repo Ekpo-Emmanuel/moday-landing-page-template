@@ -9,6 +9,7 @@ import Part4 from "./(routes)/Home/_components/Part4";
 import Part5 from "./(routes)/Home/_components/Part5";
 import Products from "./(routes)/Home/_components/Products";
 import Sponsor from "./(routes)/Home/_components/Sponsor";
+import Support from "./(routes)/Home/_components/Support";
 import Hero from "./(routes)/Home/_components/_HeroSection/Hero";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <Products />
       <Efficiency />
       <Feedback />
+      <Support />
       <Banner />
     </>
   );
