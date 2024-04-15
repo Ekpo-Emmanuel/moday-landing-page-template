@@ -89,12 +89,12 @@ export default function Part5() {
         <div className="mt-10 sm:mt-20 mx-auto flex flex-col items-center justify-center gap-10">
           <ul className="grid md:flex gap-2 justify-between grid-cols-7 shadow sm:shadow-2xl rounded-md">
               {tabs.map(tab => (
-                <li key={tab.id} className={`${activeTab === tab.id ? 'border-b-4 border-blue-500 rounded-sm' : ''}`}>
+                <li key={tab.id} className={`${activeTab === tab.id ? 'border-b-2 sm:border-b-4 border-blue-500 rounded-sm' : ''}`}>
                   <div
-                    className={`p-2 sm:p-5 flex flex-col items-center gap-2 text-gray-700 cursor-pointer ${activeTab === tab.id ? ' border-gray-400' : ''}`} 
+                    className={`py-2 sm:px-5 sm:py-5 flex flex-col items-center gap-2 text-gray-700 cursor-pointer ${activeTab === tab.id ? ' sm:border-gray-400' : ''}`} 
                     onClick={() => handleTabClick(tab.id)}
                   >
-                    <div className={`w-fit transition opacity-80 `}>
+                    <div className={`w-fit transition opacity-80 sm:block hidden`}>
                         <tab.icon 
                             size={15} 
                             strokeWidth={1.4} 

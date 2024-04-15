@@ -2,6 +2,7 @@ import Image from "next/image";
 import Banner from "./(routes)/Home/_components/Banner";
 import Efficiency from "./(routes)/Home/_components/Efficiency";
 import Features from "./(routes)/Home/_components/Features";
+import Feedback from "./(routes)/Home/_components/Feedback";
 import Navbar from "./(routes)/Home/_components/Navbar";
 import Part2 from "./(routes)/Home/_components/Part2";
 import Part4 from "./(routes)/Home/_components/Part4";
@@ -22,6 +23,7 @@ export default function Home() {
       <Part5 />
       <Products />
       <Efficiency />
+      <Feedback />
       <Banner />
     </>
   );
