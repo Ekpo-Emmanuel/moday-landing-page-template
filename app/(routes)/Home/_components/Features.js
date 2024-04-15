@@ -45,7 +45,7 @@ export default function Features() {
                             <Image src={f1Icon} alt='f1Icon' width={40} height={40}/>
                             <div className='flex justify-between flex-col'>
                                 <p className='font-bold text-[#5151D5] text-lg leading-tight'>monday work management</p>
-                                <p className='text-gray-600 text-[11px] tracking-tighter'>#1 WORK MANAGEMENT SOFTWARE ON G2</p>
+                                <p className='text-gray-600 text-[10px] tracking-tighter'>#1 WORK MANAGEMENT SOFTWARE ON G2</p>
                             </div>
                         </div>
                         <p className='font-bold text-gray-800 text-2xl tracking-tighter sm:text-3xl'>Manage everything from strategy to tasks to exceed your goals</p>
@@ -80,7 +80,7 @@ export default function Features() {
                 </div>
             </main>
 
-            <section className='flex flex-col md:flex md:flex-row gap-10 justify-center'>
+            <section className='flex flex-col md:flex md:flex-row sm:gap-10 justify-center'>
                 {subFeatures.map((feature, index) => (
                     <main key={index} className='grid grid-cols-1 gap-10 items-center w-[90%] lg:w-full mx-auto bg-white py-5 mt-10 sm:mt-20 rounded-lg shadow-xl'>
                         <div className='flex flex-col gap-6 p-5 sm:p-10 md:pl-10'>
@@ -89,13 +89,13 @@ export default function Features() {
                                     <Image src={feature.image} alt={feature.title} width={40} height={40}/>
                                     <div className='flex justify-between flex-col'>
                                         <p className='font-bold text-[#5151D5] text-lg leading-tight'>{feature.title}</p>
-                                        <p className='text-gray-600 text-[11px] tracking-tighter'>{feature.subtitle}</p>
+                                        <p className='text-gray-600 text-[10px] tracking-tighter'>{feature.subtitle}</p>
                                     </div>
                                 </div>
                                 <p className='font-bold text-gray-800 text-2xl tracking-tighter sm:text-3xl'>{feature.banner}</p>
                             </div>
                             <div className='border-t-2 border-gray-200 flex flex-col gap-4 py-4 text-gray-600'>
-                                <ul className='flex gap-2'>
+                                <ul className='flex flex-col sm:flex-row gap-2'>
                                     {feature.list.map((list, index) => (
                                         <li key={index} className='text-[12px] flex gap-2'><CircleCheck size={15}/>{list}</li>
                                     ))}

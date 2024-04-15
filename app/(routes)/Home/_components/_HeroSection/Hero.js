@@ -4,7 +4,7 @@ import HeroTitle from './HeroTitle'
 
 export default function Hero() {
   return (
-    <div className=' py-40 pb-0 sm:py-40 sm:pb-40'>
+    <div className='pt-32'>
         <HeroTitle />
         <HeroTab />
     </div>

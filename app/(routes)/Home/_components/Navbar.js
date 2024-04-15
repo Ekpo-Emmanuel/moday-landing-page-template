@@ -7,6 +7,7 @@ import LogoImage from '/public/images/logo.png'
 import Image from 'next/image'
 import { IoMdArrowForward } from "react-icons/io";
 import { PiDotsNineBold } from "react-icons/pi";
+import { Menu } from 'lucide-react'
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
@@ -38,7 +39,7 @@ export default function Navbar() {
                         alt="Monday Logo" 
                     />
                 </Link>
-                <div className="flex flex-1 items-center justify-end md:justify-between">
+                <div className="flex flex-1 items-center justify-end lg:justify-between">
                 <nav aria-label="Global" className="hidden lg:block">
                     <ul className="flex items-center gap-6 text-sm">
                     <li>
@@ -89,19 +90,12 @@ export default function Navbar() {
                     </div>
 
                     <button
-                        className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 lg:hidden"
+                        className="block rounded transition hover:text-gray-600/75 lg:hidden"
                     >
-                    <span className="sr-only">Toggle menu</span>
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
+                    <Menu
+                        
                         strokeWidth={2}
-                    >
-                        <path strokeLinecap="round" strokeLinejoin  ="round" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                    />
                     </button>
                 </div>
                 </div>

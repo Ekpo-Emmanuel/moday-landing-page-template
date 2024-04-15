@@ -3,6 +3,7 @@ import Banner from "./(routes)/Home/_components/Banner";
 import Efficiency from "./(routes)/Home/_components/Efficiency";
 import Features from "./(routes)/Home/_components/Features";
 import Feedback from "./(routes)/Home/_components/Feedback";
+import Footer from "./(routes)/Home/_components/Footer";
 import Navbar from "./(routes)/Home/_components/Navbar";
 import Part2 from "./(routes)/Home/_components/Part2";
 import Part4 from "./(routes)/Home/_components/Part4";
@@ -27,6 +28,7 @@ export default function Home() {
       <Feedback />
       <Support />
       <Banner />
+      <Footer />
     </>
   );
 }
